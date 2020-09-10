@@ -122,10 +122,88 @@
     padding: 0;
     text-align: center;
 }
+
+.topnav {
+        font-size: 15px;
+    /* display: inline-block; */
+    margin: 2px 33%;
+    font-family: 'Bubblegum Sans', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+  
+  }
+
+.topnav a {
+  
+    color: black;
+        text-decoration: none;
+        padding: 15px;
+        font-size: large;
+        margin: 5px;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+        color: gray;
+}
+
+.topnav a.active {
+    text-decoration: underline;
+        color: gray;
+}
+
+/* .topnav .icon {
+  display: none;
+} */
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+  padding: 0%;
+  }
+  /* .topnav a.icon {
+    float: right;
+    display: block;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+  padding: 0%;
+  }
+  /* .topnav.responsive .icon {
+      float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: center;
+    padding: 0%;
+  }
+}
 </style>
 
 
 <body class="home-body">
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="home.html" >Home</a>
+            <a href="#news">Memories</a>
+            <span id="midlogo" style="filter: invert();">
+                <a  href="#"><img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/US_211.svg" height="30px"
+                        onclick="showAbout()"></a>
+            </span>
+            <a href="c.html" >Contact</a>
+            <a href="#about">Admin </a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a> -->
+          </div>
+    </header>
     <div class="container">
         <div class="wrap">
             <div id="home-content">
