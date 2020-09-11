@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=IM+Fell+Double+Pica+SC&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        /* background: url("https://i.pinimg.com/originals/32/5d/b6/325db6e567793ca609c0e864cd0f63fb.jpg"); */
+        background: url("https://images2.alphacoders.com/474/474157.jpg");
+        background-size: cover;
+    }
+    
+    .topnav {
+        font-size: 15px;
+        /* display: inline-block; */
+        margin: 2px 33%;
+        font-family: 'Bubblegum Sans', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        font-size: large;
+        margin: 5px;
+    }
+    
+    .topnav a:hover {
+        text-decoration: underline;
+        color: yellow;
+    }
+    
+    .topnav a.active {
+        text-decoration: underline;
+        color: yellow;
+    }
+    /* .topnav .icon {
+  display: none;
+} */
+    
+    @media screen and (max-width: 600px) {
+        .topnav a {
+            padding: 0%;
+        }
+        /* .topnav a.icon {
+    float: right;
+    display: block;
+  } */
+    }
+    
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            padding: 0%;
+        }
+        /* .topnav.responsive .icon {
+      float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+        .topnav.responsive a {
+            float: none;
+            display: flex;
+            text-align: center;
+            padding: 0%;
+        }
+    }
+    
+    .container {
+        color: white;
+        text-align: center;
+        height: 544px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        position: absolute;
+        margin: 20px 1%;
+    }
+    
+    .text {
+        margin: 100px;
+        font-family: 'Bubblegum Sans', cursive;
+        font-size: x-large;
+    }
+    
+    .circle {
+        height: 150px;
+        border-radius: 800px;
+    }
+    
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+    }
+    
+    .box {
+        font-family: 'IM Fell Double Pica SC', serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    #g {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+    }
+    /* .akram {
+        float: left;
+        margin-left: 150px;
+    }
+
+    .shivam {
+        
+        float: right;
+        margin-right: 150px;
+    } */
+</style>
+
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="/" class="active">Home</a>
+            <a href="/memories">Memories</a>
+            <span id="midlogo">
+                <a  href="#"><img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/US_211.svg" height="30px"
+                        onclick="showAbout()"></a>
+            </span>
+            <a href="/contact">Contact</a>
+            <a href="/contribute">CONTRIBUTE </a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a> -->
+        </div>
+
+    </header>
+
+    <div class="container" id="contact">
+        <div class="text">
+            <p>Feel free to discuss and approach for collaboration on any ideas and projects related to web ,android designing.
+            </p>
+            <p>Although we are not just restricted to that :P</p>
+            <p>Checkout out our works at <a target="blank" href="https://github.com/as-square" id="g">ASA PROJECT</a>.</p>
+        </div>
+        <div class="box">
+            <div class="akram">
+                <img src="ak.jpg" class="circle">
+                <br>
+                <p class="speaker-text speaker-name">Md.Akram Khan</p>
+
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100039960969538"><i
+                            class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://github.com/mrkhan02"><i class="fa fa-github"
+                            style="font-size:36px"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/itsmak/"><i class="fa fa-linkedin-square"
+                            style="font-size:36px"></i></a>
+
+                </div>
+                <p id="g">B19215@students.iitmandi.ac.in</p>
+            </div>
+            <div class="shivam">
+                <img src="shivam.jpg" class="circle">
+                <br>
+                <p class="speaker-text speaker-name">Shivam Sundram</p>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100024784236218"><i
+                            class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://github.com/RATED-R-SUNDRAM/"><i class="fa fa-github"
+                            style="font-size:36px"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/shivam-sundram-615522191/"><i class="fa fa-linkedin-square"
+                            style="font-size:36px"></i></a>
+                </div>
+                <p id="g">B19021@students.iitmandi.ac.in</p>
+            </div>
+            <div class="aadi">
+                <img src="aadi.jpeg" class="circle">
+                <br>
+                <p class="speaker-text speaker-name">Aditya Singh Chauhan</p>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/asc2205"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://github.com/atrss/"><i class="fa fa-github"
+                            style="font-size:36px"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/itsmak/"><i class="fa fa-linkedin-square"
+                            style="font-size:36px"></i></a>
+                </div>
+                <p id="g">B19025@students.iitmandi.ac.in</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script> -->
+
+</body>
+
+</html>
