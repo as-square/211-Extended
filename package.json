@@ -1,5 +1,5 @@
 {
-  "name": "hehehehe",
+  "name": "Saumyapp",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -12,10 +12,9 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
-    "events": "^3.2.0",
     "express": "^4.17.1",
-    "mongodb": "^3.6.2",
-    "mongoose": "^5.10.4",
-    "path": "^0.12.7"
+    "mongoose": "^5.10.2",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
   }
 }
