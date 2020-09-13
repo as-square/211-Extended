@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Harsh | 211</title>
+    <link rel = "icon" href =  
+    "https://upload.wikimedia.org/wikipedia/commons/9/9a/US_211.svg" 
+            type = "image/x-icon"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=IM+Fell+Double+Pica+SC&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+    
+    #home-content {
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 1px;
+    }
+    
+    #profile {
+        background-image: url(https://scontent.fknu1-1.fna.fbcdn.net/v/t1.0-9/119088349_154320246320187_3085608309432046314_n.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=i4UYOION7WoAX9Iy1ou&_nc_ht=scontent.fknu1-1.fna&oh=3cbf7fd9ac977cb5e3ec49c50bff697c&oe=5F82AEB0);
+        background-size: cover;
+        border-radius: 50%;
+        z-index: 1;
+        height: 220px;
+        width: 220px;
+        margin: 0 auto;
+    }
+    
+    .home-body {
+        border-top: 15px solid #222;
+        border-bottom: 15px solid #222;
+        box-sizing: border-box;
+        background-color: #f0f0f0;
+        height: initial;
+        min-height: 100%;
+    }
+    
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: black;
+    }
+    
+    #g {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    h3 {
+        animation: type 4s steps(35), cursor 500ms steps(36) infinite normal;
+        ;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        width: 35ch;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes type {
+        0% {
+            width: 0%;
+            text-align: center;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    
+    @keyframes cursor {
+        0% {
+            border-right-color: black;
+        }
+        100% {
+            border-right-color: transparent;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        h3 {
+            font-size: xx-small;
+        }
+    }
+    
+    p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: x-large;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    * {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .topnav {
+        font-size: 15px;
+        /* display: inline-block; */
+        margin: 2px 33%;
+        font-family: 'Bubblegum Sans', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .topnav a {
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        font-size: large;
+        margin: 5px;
+    }
+    
+    .topnav a:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+    
+    .topnav a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+    /* .topnav .icon {
+  display: none;
+} */
+    
+    @media screen and (max-width: 600px) {
+        .topnav a {
+            padding: 0%;
+        }
+        /* .topnav a.icon {
+    float: right;
+    display: block;
+  } */
+    }
+    
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            padding: 0%;
+        }
+        /* .topnav.responsive .icon {
+      float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+        .topnav.responsive a {
+            float: none;
+            display: flex;
+            text-align: center;
+            padding: 0%;
+        }
+    }
+  
+</style>
+
+
+<body class="home-body">
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="/" >Home</a>
+            <a href="/memories">Memories</a>
+            <span id="midlogo">
+                <a  href="#"><img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/US_211.svg" height="30px"
+                        onclick="showAbout()"></a>
+            </span>
+            <a href="/contact">Contact</a>
+            <a href="/contribute">Contribute </a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a> -->
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrap">
+            <div id="home-content">
+                <div id="profile"></div>
+                <h1 style="font-family: 'Zilla Slab', serif;">Harsh garg</h1>
+                <hr id="g">
+                <h3 style="font-family: 'Ubuntu', sans-serif;">CODING,AMUL MILK AND GYM ENTHUSIAST</h3>
+                <div id="home-icons">
+                    <div>
+                        <!-- <a target="_blank" href="#"><i
+                                class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="#"><i class="fa fa-github"
+                                style="font-size:36px"></i></a>
+                        <a target="_blank" href="#"><i class="fa fa-linkedin-square"
+                                style="font-size:36px"></i></a> -->
+                        <a target="_blank" href="https://www.instagram.com/harshgarg7562/"><i class="fa fa-instagram"
+                                style="font-size:36px"></i></a>
+                        <a href="mailto:b19163@students.iitmandi.ac.in" target="_blank"><i class="fa fa-envelope"
+                                style="font-size:36px"></i></a>
+
+                    </div>
+                </div>
+                <p>An epitome of introvercy,multiple failed attempts to take down aditya singh chauhan in a one to one fight,loves haryana and gym ,enthusiastic and quick learner of technology,best coder of the gang!!!!!!</p>
+                
+                <h2 style="font-family: 'Quicksand', sans-serif;"> PS: Apne ko to je chhaiye </h2>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+
+</html>
