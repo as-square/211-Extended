@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# dekhte-hai....2
-=======
+
 # **211-Extended**
 
 >ABOUT
