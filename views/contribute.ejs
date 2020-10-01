@@ -1,26 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
+    <title>Contribute | 211</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contribute | 211</title>
     <link rel = "icon" href =  
     "https://upload.wikimedia.org/wikipedia/commons/9/9a/US_211.svg" 
             type = "image/x-icon"> 
-</head>
-<style>
-
-</style>
-
-<body>
-
-    <form method="POST" action="/daal" id="fo">
-        <span>Name : </span><input type="text" id="sex" name="name"  required/><br>
-        <span>Content :</span><input type="text" id="pex" name="message" required/><br>
-        <button type="submit">submit here</button>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=IM+Fell+Double+Pica+SC&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      html, body {
+      min-height: 100vh;
+      padding: 0;
+      margin: 2px;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px; 
+      color: #666;
+      }
+      input, textarea { 
+      outline: none;
+      }
+      body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-image: url("https://cdn.pixabay.com/photo/2016/01/19/17/19/foggy-1149637_960_720.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content:end;
+      
+      }
+      h1 {
+      margin-top: 0;
+      font-weight: 500;
+      }
+      form {
+      position: relative;
+      width: 80%;
+      border-radius: 30px;
+      background: #fff;
+      }
+      .form-left-decoration,
+      .form-right-decoration {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      border-radius: 20px;
+      background: gray;
+      }
+      .form-left-decoration {
+      bottom: 60px;
+      left: -30px;
+      }
+      .form-right-decoration {
+      top: 60px;
+      right: -30px;
+      }
+      .form-left-decoration:before,
+      .form-left-decoration:after,
+      .form-right-decoration:before,
+      .form-right-decoration:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      border-radius: 30px;
+      background: #fff;
+      }
+      .form-left-decoration:before {
+      top: -20px;
+      }
+      .form-left-decoration:after {
+      top: 20px;
+      left: 10px;
+      }
+      .form-right-decoration:before {
+      top: -20px;
+      right: 0;
+      }
+      .form-right-decoration:after {
+      top: 20px;
+      right: 10px;
+      }
+      .circle {
+      position: absolute;
+      bottom: 80px;
+      left: -55px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #fff;
+      }
+      .form-inner {
+      padding: 40px;
+      }
+      .form-inner input,
+      .form-inner textarea {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 20px;
+      background: #d0dfe8;
+      }
+      .form-inner textarea {
+      resize: none;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 20px;
+      border: none;
+      border-bottom: 4px solid gray;
+      background: gray; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: rgba(128, 128, 128, 0.664);
+      } 
+      @media (min-width: 568px) {
+      form {
+      width: 70%;
+      
     
- </div>
-</body>
+      }
+      }
 
+      .topnav {
+        font-size: 15px;
+        /* display: inline-block; */
+        margin: 2px 33%;
+        font-family: 'Bubblegum Sans', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .topnav a {
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        font-size: large;
+        margin: 5px;
+    }
+    
+    .topnav a:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+    
+    .topnav a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+    /* .topnav .icon {
+  display: none;
+} */
+    
+    @media screen and (max-width: 600px) {
+        .topnav a {
+            padding: 0%;
+        }
+        /* .topnav a.icon {
+    float: right;
+    display: block;
+  } */
+    }
+    
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            padding: 0%;
+            
+        }
+        /* .topnav.responsive .icon {
+      float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+        .topnav.responsive a {
+            float: none;
+            display: flex;
+            text-align: center;
+            padding: 0%;
+        }
+    }
+
+    
+    </style>
+  </head>
+  <body >
+    <header >
+        <div class="topnav" id="myTopnav">
+            <a href="/" >Home</a>
+            <a href="/memories">Memories</a>
+            <span id="midlogo">
+                <a  href="#"><img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/US_211.svg" height="30px"
+                        onclick="showAbout()"></a>
+            </span>
+            <a href="/contact">Contact</a>
+            <a href="/contribute" class="active">Contribute </a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a> -->
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form method="POST" action="/daal" id="fo" class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h1 style="font-family: 'Quicksand', sans-serif;" >Our memories, your words🧡</h1>
+        <input type="text" id="sex" name="name" placeholder="Your Name">
+        
+        <textarea type="text" id="pex" name="message" placeholder="Message..." rows="5"></textarea>
+        <button type="submit" >Submit</button>
+      </div>
+    </form>
+  </body>
 </html>
