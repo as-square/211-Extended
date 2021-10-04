@@ -9,8 +9,6 @@ var server = app.listen(3000 || process.env.PORT, () => { console.log("go shivam
 app.set("view engine", "ejs")
 app.set("views", require("path").join(__dirname, "views"));
 var io = socket(server);
-
-
 app.post("/daal", (req, res) => {
     io.on("connection", (socket) => {
         console.log("yeah bith");
@@ -37,7 +35,7 @@ app.set("views", path.join(__dirname, "views"));
 var port = 8000 || process.env.PORT;
 
 
-var url = "mongodb+srv://jacrispy:Ragini@123@cluster0.pyvtl.mongodb.net/sexyb?retryWrites=true&w=majority";
+var url = "mongodb+srv://jacrispy:jacrispy2001@cluster0.pyvtl.mongodb.net/sexyb?retryWrites=true&w=majority";
 mongooose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 mongooose.connection.on("open", () => { console.log("fired up db bitch!!!!!") });
 
@@ -89,9 +87,5 @@ app.get("/harshit", (req, res) => {
 app.get("/shivam", (req, res) => {
     res.render("shivam")
 });
-
-
-
-
-app.listen(port, () => { console.log("shi") })
+app.listen(port, () => { console.log("running the page") })
 >>>>>>> 7545e75a4642c2b4464a923c469c11c7c079a1e0
