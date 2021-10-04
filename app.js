@@ -9,6 +9,9 @@ var server = app.listen(3000 || process.env.PORT, () => { console.log("go shivam
 app.set("view engine", "ejs")
 app.set("views", require("path").join(__dirname, "views"));
 var io = socket(server);
+
+/* socket code for transmitting message*/
+
 app.post("/daal", (req, res) => {
     io.on("connection", (socket) => {
         console.log("yeah bith");
@@ -24,6 +27,8 @@ app.get("/", (req, res) => {
     res.render("chat")
 });
 =======
+    
+/* importing node modules for connecting to the database*/
 var express = require("express");
 var app = express();
 var path = require("path");
@@ -35,10 +40,11 @@ app.set("views", path.join(__dirname, "views"));
 var port = 8000 || process.env.PORT;
 
 
-var url = "mongodb+srv://jacrispy:jacrispy2001@cluster0.pyvtl.mongodb.net/sexyb?retryWrites=true&w=majority";
+var url = "mongodb+srv://jacrispy:jacrispy2001@cluster0.pyvtl.mongodb.net/sexyb?retryWrites=true&w=majority"; /* the database link*/
 mongooose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 mongooose.connection.on("open", () => { console.log("fired up db bitch!!!!!") });
 
+/* the schema for databse*/
 var mymodel = mongooose.model("model", new mongooose.Schema({
     name: String,
     message: String
